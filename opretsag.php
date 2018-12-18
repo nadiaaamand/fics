@@ -9,11 +9,11 @@
 
 <!--Bootstrap JS-->
 <script src="bootstrap/js/bootstrap.min.js"></script>
+
 <meta charset="UTF-8">
-<title>FICS Portal</title>
+<title>Opret sag</title>
 </head>
 
 <body>
-
 </body>
 </html>
