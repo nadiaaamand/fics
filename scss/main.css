@@ -1,5 +1,35 @@
 /* Scss Document */
 body {
-  background: #f2f2f2; }
+  padding: 0;
+  margin: 0; }
+
+.refresh {
+  width: auto;
+  height: 20px; }
+
+a {
+  color: #333; }
+
+.box {
+  background-color: #c5c5c5;
+  padding: 0.5em 1.5em;
+  border-left: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5; }
+
+.nav-pills .nav-link {
+  border-radius: 0; }
+
+.nav-pills .nav-link:hover {
+  background-color: #707070;
+  color: #fff; }
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #707070;
+  border-left: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5; }
+
+.dead .nav-pills .nav-link:hover {
+  background-color: white !important; }
 
 /*# sourceMappingURL=main.css.map */
