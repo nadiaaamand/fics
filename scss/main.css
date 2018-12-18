@@ -10,11 +10,14 @@ body {
 a {
   color: #333; }
 
+a:hover {
+  color: #000; }
+
 .box {
   background-color: #c5c5c5;
   padding: 0.5em 1.5em;
-  border-left: 1px solid #e5e5e5;
-  border-right: 1px solid #e5e5e5; }
+  border-left: 1px solid #dee2e6;
+  border-right: 1px solid #dee2e6; }
 
 .nav-pills .nav-link {
   border-radius: 0; }
@@ -26,10 +29,26 @@ a {
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
   color: #fff;
   background-color: #707070;
-  border-left: 1px solid #e5e5e5;
-  border-right: 1px solid #e5e5e5; }
+  border-left: 1px solid #dee2e6;
+  border-right: 1px solid #dee2e6; }
 
-.dead .nav-pills .nav-link:hover {
-  background-color: white !important; }
+.portal {
+  display: block;
+  padding: .5rem 1rem;
+  margin: 0; }
+
+.opgaver {
+  display: block;
+  padding: .5rem 1rem;
+  border-bottom: 1px solid #c5c5c5;
+  margin: 0 0 1em 0;
+  background-color: #c5c5c5; }
+
+.sidemenu {
+  padding: 0;
+  border-right: 1px solid #dee2e6; }
+
+.padding-ekstra {
+  padding-left: 15px; }
 
 /*# sourceMappingURL=main.css.map */

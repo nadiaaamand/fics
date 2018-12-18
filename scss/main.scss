@@ -3,6 +3,7 @@
 $link_color: #333;
 $box_background: #c5c5c5;
 $active: #707070;
+$hover_menu: #dee2e6;
 
 body{ //small reset
 	padding: 0;
@@ -19,11 +20,15 @@ a{
 	color: $link_color;
 }
 
+a:hover{
+	color: #000;
+}
+
 .box{
 	background-color: $box_background;
 	padding: 0.5em 1.5em;
-	border-left: 1px solid #e5e5e5;
-	border-right: 1px solid #e5e5e5;
+	border-left: 1px solid $hover_menu;
+	border-right: 1px solid $hover_menu;
 }
 
 .nav-pills .nav-link {
@@ -38,12 +43,30 @@ a{
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
     color: #fff;
     background-color: $active;
-	border-left: 1px solid #e5e5e5;
-	border-right: 1px solid #e5e5e5;
+	border-left: 1px solid $hover_menu;
+	border-right: 1px solid $hover_menu;
 }
 
-.dead{
+.portal{
+	display: block;
+    padding: .5rem 1rem;
+	margin: 0;;
+}
+
+.opgaver{
+	display: block;
+    padding: .5rem 1rem;
+	border-bottom: 1px solid $box_background;
+	margin: 0 0 1em 0;
+	background-color: $box_background;
+}
+
+.sidemenu{ //removing padding from columns
+	padding: 0;
+	border-right: 1px solid $hover_menu;
 	
-	.nav-pills .nav-link:hover {
-    background-color: white!important;
-		}}
+}
+
+.padding-ekstra{ //padding for the sidemenu
+	padding-left: 15px;
+}

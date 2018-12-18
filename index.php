@@ -15,7 +15,7 @@
 
 <body>
 <!--Main Navigation-->
-	<nav class="nav">
+	<nav class="nav border">
 	  <a class="nav-link" href="opretsag.php">Ny</a>
 	  <a class="nav-link" href="soeg.php">Søg</a>
 	  <a class="nav-link" href="#"><img class="refresh img-fluid" src="img/refresh.png" alt="refresh icon"</a>
@@ -25,11 +25,12 @@
 	  <a class="nav-link" href="#">Hjælp</a>
 	</nav>
 	
-<!--Side navigation-->
 <div class="row">
-	<div class="col-2">
-		<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-   				 <p class="">Portal</p>
+<!--Side navigation-->
+	<div class="col-2 sidemenu">
+		<div class="nav flex-column nav-pills padding-ekstra" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+   			<p class="portal">Portalmenu</p>
+   			<p class="opgaver">Opgaver</p>
  			
   			<a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Mine</a>
   
@@ -39,21 +40,18 @@
 		</div>
 
 <!--Content for side menu-->
-	<div class="tab-content" id="v-pills-tabContent">
+	<!--<div class="tab-content" id="v-pills-tabContent">
 		  <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">blblbla</div>
 
 		  <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">lålålå</div>
 
 		  <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">hej</div>
-	</div>
-		
+	</div>	-->
 		</div>
-		
-			
-			
+							
 <!--Secondary Navigation-->	
-<div class="col-10">
-	<nav class="nav nav-pills nav-justified">
+<div class="col-10 sidemenu">
+	<nav class="nav nav-pills nav-justified border-bottom">
 	  <a class="nav-link active" href="#">Opgaver</a>
 	  <a class="nav-link box" href="#">Sager</a>
 	  <a class="nav-link box" href="#">Dokumenter</a>
