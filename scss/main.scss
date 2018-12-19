@@ -32,6 +32,17 @@ a:hover{
 	border-right: 1px solid $hover_menu;
 }
 
+.soeg{
+	background-color: $box_background;
+	border-left: 1px solid $hover_menu;
+	border-right: 1px solid $hover_menu;
+}
+
+.addtab{
+	width: auto;
+	height: 15px;
+}
+
 .nav-pills .nav-link {
     border-radius: 0;
 }
@@ -58,6 +69,12 @@ a:hover{
 	border-bottom: 1px solid $box_background;
 	margin: 0 0 1em 0;
 	background-color: $box_background;
+}
+
+.sletfane{
+	width: auto;
+	height: 10px;
+	padding-left: 15px;
 }
 
 
@@ -90,4 +107,43 @@ a.nav-link.minus {
 
 a.nav-link.sidemenu {
     padding: 0.3rem 1rem;
+}
+
+.pil {
+    width: auto;
+    height: 8px;
+    padding-left: 5px;
+}
+
+/*-------------------Form style---------------------*/
+
+.form-control{
+	border-radius: 0;
+}
+
+.btn {
+	border-radius: 0;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: $active;
+    border-color: $active;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #c5c5c5;
+    border-color: #c5c5c5;
+}
+
+.btn-secondary {
+    color: #fff;
+    background-color: $box-background;
+    border-color: $box-background;
+}
+.btn-secondary:hover {
+    color: #fff;
+    background-color: #e5e5e5;
+    border-color: #e5e5e5;
 }

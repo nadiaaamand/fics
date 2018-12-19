@@ -22,6 +22,15 @@ a:hover {
   border-left: 1px solid #dee2e6;
   border-right: 1px solid #dee2e6; }
 
+.soeg {
+  background-color: #c5c5c5;
+  border-left: 1px solid #dee2e6;
+  border-right: 1px solid #dee2e6; }
+
+.addtab {
+  width: auto;
+  height: 15px; }
+
 .nav-pills .nav-link {
   border-radius: 0; }
 
@@ -44,6 +53,11 @@ a:hover {
   border-bottom: 1px solid #c5c5c5;
   margin: 0 0 1em 0;
   background-color: #c5c5c5; }
+
+.sletfane {
+  width: auto;
+  height: 10px;
+  padding-left: 15px; }
 
 /*-------------------Navigation slut--------------------*/
 .vindue {
@@ -68,5 +82,37 @@ a.nav-link.minus {
 
 a.nav-link.sidemenu {
   padding: 0.3rem 1rem; }
+
+.pil {
+  width: auto;
+  height: 8px;
+  padding-left: 5px; }
+
+/*-------------------Form style---------------------*/
+.form-control {
+  border-radius: 0; }
+
+.btn {
+  border-radius: 0; }
+
+.btn-primary {
+  color: #fff;
+  background-color: #707070;
+  border-color: #707070; }
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #c5c5c5;
+  border-color: #c5c5c5; }
+
+.btn-secondary {
+  color: #fff;
+  background-color: #c5c5c5;
+  border-color: #c5c5c5; }
+
+.btn-secondary:hover {
+  color: #fff;
+  background-color: #e5e5e5;
+  border-color: #e5e5e5; }
 
 /*# sourceMappingURL=main.css.map */
