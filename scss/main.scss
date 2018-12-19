@@ -1,16 +1,17 @@
 /* Scss Document */
 
+/*Color variables*/
 $link_color: #333;
 $box_background: #c5c5c5;
 $active: #707070;
 $hover_menu: #dee2e6;
 
-body{ //small reset
+body{ /*small reset*/
 	padding: 0;
 	margin: 0;
 }
 
-//Navigation
+/*Navigation*/
 .refresh{
 	width: auto;
 	height: 20px;
@@ -43,14 +44,12 @@ a:hover{
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
     color: #fff;
     background-color: $active;
-	border-left: 1px solid $hover_menu;
-	border-right: 1px solid $hover_menu;
 }
 
 .portal{
 	display: block;
     padding: .5rem 1rem;
-	margin: 0;;
+	margin: 0;
 }
 
 .opgaver{
@@ -61,12 +60,34 @@ a:hover{
 	background-color: $box_background;
 }
 
-.sidemenu{ //removing padding from columns
-	padding: 0;
-	border-right: 1px solid $hover_menu;
-	
+
+/*-------------------Navigation slut--------------------*/
+
+.vindue {
+	width: auto;
+	height: 20px;
 }
 
-.padding-ekstra{ //padding for the sidemenu
-	padding-left: 15px;
+.float-vindue{
+	position: absolute;
+	right: 0;
+}
+
+.float{
+	position: relative;
+}
+
+.div-box{
+	height: 8em;
+}
+
+a.nav-link.minus {
+    padding: 0.3rem 1rem;
+	background-color: $box-background;
+	border-left: 1px solid $hover_menu;
+	border-right: 1px solid $hover_menu;
+}
+
+a.nav-link.sidemenu {
+    padding: 0.3rem 1rem;
 }

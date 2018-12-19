@@ -14,8 +14,9 @@
 </head>
 
 <body>
+<div class="container col-10 p-0 border">
 <!--Main Navigation-->
-	<nav class="nav border">
+	<nav class="nav border-bottom">
 	  <a class="nav-link" href="opretsag.php">Ny</a>
 	  <a class="nav-link" href="soeg.php">Søg</a>
 	  <a class="nav-link" href="#"><img class="refresh img-fluid" src="img/refresh.png" alt="refresh icon"</a>
@@ -27,16 +28,16 @@
 	
 <div class="row">
 <!--Side navigation-->
-	<div class="col-2 sidemenu">
-		<div class="nav flex-column nav-pills padding-ekstra" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+	<div class="col-2 pr-0 border-right">
+		<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
    			<p class="portal">Portalmenu</p>
    			<p class="opgaver">Opgaver</p>
  			
-  			<a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Mine</a>
+  			<a class="nav-link sidemenu active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Mine</a>
   
-		  	<a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Seneste søgning</a>
+		  	<a class="nav-link sidemenu" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Seneste søgning</a>
 		  
-		  	<a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Mine favoritter</a>
+		  	<a class="nav-link sidemenu" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Mine favoritter</a>
 		</div>
 
 <!--Content for side menu-->
@@ -50,14 +51,58 @@
 		</div>
 							
 <!--Secondary Navigation-->	
-<div class="col-10 sidemenu">
+<div class="col-10 pl-0">
 	<nav class="nav nav-pills nav-justified border-bottom">
 	  <a class="nav-link active" href="#">Opgaver</a>
 	  <a class="nav-link box" href="#">Sager</a>
 	  <a class="nav-link box" href="#">Dokumenter</a>
 	  <a class="nav-link box" href="#">Kontakter</a>
 	</nav>
-</div>
+
+<!--Mine opgaver-->	
+	<div class="clearfix pl-3 pr-3 pt-1 pb-1 border-bottom">
+		<p class="float-left m-0">Mine opgaver</p>
+		<img class="float-right vindue" src="img/vindue.png" alt="vindue">
+	</div>
+	<div class="div-box"></div>
+	
+<!--Sager-->	
+	<div class="clearfix pl-3 pr-3 pt-1 pb-1 border-bottom border-top">
+		<p class="float-left m-0">Sager</p>
+		<img class="float-right vindue" src="img/vindue.png" alt="vindue">
+	</div>
+	<div class="div-box"></div>
+	
+<!--Dokumenter-->	
+		<div class="border-bottom border-top">
+		<div class="row col-12">
+			<nav class="nav nav-pills nav-justified float">
+			  <a class="nav-link minus active" href="#">Dokumenter</a>
+			  <a class="nav-link minus" href="#">Opgaver</a>
+			  <a class="nav-link minus" href="#">Sagsparter</a>
+			</nav>	
+			 <img class="float-vindue vindue mt-1" src="img/vindue.png" alt="vindue">
+			</div>
+	</div>
+	<div class="div-box"></div>
+	
+<!--Bilag-->	
+		<div class="border-bottom border-top">
+		<div class="row col-12">
+			<nav class="nav nav-pills nav-justified float">
+			  <a class="nav-link minus" href="#">Bilag</a>
+			  <a class="nav-link minus" href="#">Kopimodtagere</a>
+			  <a class="nav-link minus active" href="#">Notatark</a>
+			</nav>	
+			 <img class="float-vindue vindue mt-1" src="img/vindue.png" alt="vindue">
+			</div>
+	</div>
+	<div class="div-box"></div>
+	
+	</div>	
+		
+	</div>
+	
 	</div>
 
 </body>

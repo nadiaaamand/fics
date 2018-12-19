@@ -1,8 +1,11 @@
 /* Scss Document */
+/*Color variables*/
 body {
+  /*small reset*/
   padding: 0;
   margin: 0; }
 
+/*Navigation*/
 .refresh {
   width: auto;
   height: 20px; }
@@ -28,9 +31,7 @@ a:hover {
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #707070;
-  border-left: 1px solid #dee2e6;
-  border-right: 1px solid #dee2e6; }
+  background-color: #707070; }
 
 .portal {
   display: block;
@@ -44,11 +45,28 @@ a:hover {
   margin: 0 0 1em 0;
   background-color: #c5c5c5; }
 
-.sidemenu {
-  padding: 0;
+/*-------------------Navigation slut--------------------*/
+.vindue {
+  width: auto;
+  height: 20px; }
+
+.float-vindue {
+  position: absolute;
+  right: 0; }
+
+.float {
+  position: relative; }
+
+.div-box {
+  height: 8em; }
+
+a.nav-link.minus {
+  padding: 0.3rem 1rem;
+  background-color: #c5c5c5;
+  border-left: 1px solid #dee2e6;
   border-right: 1px solid #dee2e6; }
 
-.padding-ekstra {
-  padding-left: 15px; }
+a.nav-link.sidemenu {
+  padding: 0.3rem 1rem; }
 
 /*# sourceMappingURL=main.css.map */
