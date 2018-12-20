@@ -53,7 +53,7 @@
 			
 			 </div>
 			
-			<!--Row 2 -->
+		<!--Row 2 -->
 			<div class="row">
 				<div class="col">
 			<div class="form-group row">
@@ -74,7 +74,7 @@
 			</div>
 			</div>
 			
-			<!--Row 3 -->
+		<!--Row 3 -->
 			<div class="row">
 				<div class="col">
 			<div class="form-group row">
@@ -95,7 +95,7 @@
 			</div>
 			</div>
 			
-			<!--Row 4 -->
+		<!--Row 4 -->
 			<div class="row">
 				<div class="col">
 			<div class="form-group row">
@@ -116,7 +116,7 @@
 			</div>
 			</div>
 			
-			<!--Row 5 -->
+		<!--Row 5 -->
 			<div class="row">
 				<div class="col">
 			<div class="form-group row">
@@ -144,20 +144,20 @@
 			
 			</div>
 				
-						 <!--Row 6 -->
-			<div class="row">			
-			<div class="col">
-			 	 <div class="row">
-					<a class="col-12" href="#">Flere søgemuligheder<img class="pil" src="img/pil.png" alt="fleresøgemuligheder"></a>
+		<!--Row 6 -->
+				<div class="row">			
+				<div class="col">
+			 	<div class="row">
+				<a class="col-12" href="#">Flere søgemuligheder<img class="pil" src="img/pil.png" alt="fleresøgemuligheder"></a>
 					
 			</div>
 			</div>
 		 </div>
-					<div class="form-group row pt-3 pb-2">
-						<div class="offset-md-9 pl-5">
-							<button class="btn btn-secondary ml-2">Ryd</button>
-							<button type="submit" class="btn btn-primary pl-5 pr-5 ml-1">Søg</button>
-						</div>
+			<div class="form-group row pt-3 pb-2">
+				<div class="offset-md-9 pl-5">
+					<button class="btn btn-secondary ml-2">Ryd</button>
+					<button type="submit" class="btn btn-primary pl-5 pr-5 ml-1">Søg</button>
+				</div>
 		  </div>
 		   
 			</div>

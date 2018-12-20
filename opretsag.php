@@ -4,11 +4,19 @@
 <!--Bootstrap CSS-->
 <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 
+<!--Gijgo CSS-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link href="https://unpkg.com/gijgo@1.9.11/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+
 <!--Main SCSS-->
 <link rel="stylesheet" href="scss/main.css">
 
 <!--Bootstrap JS-->
 <script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+<!--Gijgo JS-->
+<script src="https://unpkg.com/gijgo@1.9.11/js/gijgo.min.js" type="text/javascript"></script>
 
 <meta charset="UTF-8">
 <title>Opret sag</title>
@@ -91,7 +99,7 @@
 			 	 <div class="form-group row">
 					<label class="col-3">Opr. dato</label>
 					<div class="col-9">
-					<input type="text" class="form-control" name="journalplan">
+					<input id="datepicker"/>
 					</div>
 			</div>
 			</div>
@@ -257,5 +265,13 @@
 	</div>
 	
 		</div>
+		
+		
+		<!---JS for datepicker-->
+			<script>
+			$('#datepicker').datepicker({
+			uiLibrary: 'bootstrap4'
+			});
+			</script>
 </body>
 </html>
