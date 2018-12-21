@@ -129,10 +129,8 @@ tr, th, td {
 table {
   width: 100.2%; }
 
-input[type=checkbox] {
+.opgave input[type=checkbox] {
   margin-left: 30px; }
 
 table > *:first-child:not(thead) td:first-child {
   width: 25px; }
-
-/*# sourceMappingURL=main.css.map */

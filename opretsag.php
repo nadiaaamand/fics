@@ -40,238 +40,235 @@
 	</nav>
 	
 	<div class="container-fluid pt-4">
-		<form>
+		<form class="nysag" action="add.php" enctype="multipart/form-data" method="POST">
 	  <!--Row 1 -->
 		  <div class="row">
 			<div class="col">
-			<div class="form-group row">
-				<label class="col-3">Journalplan</label>
-				<div class="col-9">
-				<input type="text" class="form-control" name="journalplan">
+				<div class="form-group row">
+					<label class="col-3">Journalplan</label>
+					<div class="col-9">
+						<input type="text" class="form-control" name="journalplan">
+					</div>
 				</div>
-			</div>
 			</div>
 			
 			<div class="col">
 			 	 <div class="form-group row">
 					<label class="col-3">Sagstype</label>
 					<div class="col-9">
-					<input type="text" class="form-control" name="journalplan">
+						<input type="text" class="form-control" name="sagstype">
 					</div>
-			</div>
-			</div>
-			
-			 </div>
-			
-			<!--Row 2 -->
-			<div class="row">
-				<div class="col">
-			<div class="form-group row">
-				<label class="col-3">Stikord</label>
-				<div class="col-9">
-				<input type="text" class="form-control" name="journalplan">
 				</div>
 			</div>
+		</div>
+			
+			<!--Row 2 -->
+		<div class="row">
+			<div class="col">
+				<div class="form-group row">
+					<label class="col-3">Stikord</label>
+					<div class="col-9">
+						<input type="text" class="form-control" name="stikord">
+					</div>
+				</div>
 			</div>
 			
 			<div class="col">
-			 	 <div class="form-group row">
+				<div class="form-group row">
 					<label class="col-3">Sagsid</label>
 					<div class="col-9">
-					<input type="text" class="form-control" name="journalplan">
+						<input type="text" class="form-control" name="sagsid">
 					</div>
-			</div>
+				</div>
 			</div>
 		 </div>
 		 
 		 <!--Row 3 -->
-			<div class="row">
-				<div class="col">
-			<div class="form-group row">
-				<label class="col-3">Sagsgruppe</label>
-				<div class="col-9">
-				<input type="text" class="form-control" name="journalplan">
+		<div class="row">
+			<div class="col">
+				<div class="form-group row">
+					<label class="col-3">Sagsgruppe</label>
+					<div class="col-9">
+						<input type="text" class="form-control" name="sagsgruppe">
+					</div>
 				</div>
-			</div>
 			</div>
 			
 			<div class="col">
 			 	 <div class="form-group row">
 					<label class="col-3">Opr. dato</label>
 					<div class="col-9">
-					<input id="datepicker"/>
+						<input id="datepicker" name="opretdato"/>
 					</div>
-			</div>
+				</div>
 			</div>
 		 </div>
 		 
 		 <!--Row 4 -->
 			<div class="row">
 				<div class="col">
-			<div class="form-group row">
-				<label class="col-3">Undernr.</label>
-				<div class="col-9">
-				<input type="text" class="form-control" name="journalplan">
-			  <div class="form-check pt-2">
-				  <input class="form-check-input" type="checkbox" id="gridCheck">
-					  <label class="form-check-label" for="gridCheck">
-						Advar ved undernr. på gruppen
-					  </label>
+					<div class="form-group row">
+						<label class="col-3">Undernr.</label>
+						<div class="col-9">
+						<input type="text" class="form-control" name="undernr">
+					  		<div class="form-check pt-2">
+							  <input class="form-check-input" type="checkbox" id="gridCheck">
+								  <label class="form-check-label" for="gridCheck">
+									Advar ved undernr. på gruppen
+								  </label>
+							</div>
+						</div>
 					</div>
 				</div>
-			</div>
-			</div>
 			
 			<div class="col">
 			 	 <div class="form-group row">
 					<label class="col-3">Klassifikation</label>
 					<div class="col-9">
-					<input type="text" class="form-control" name="journalplan">
+					<input type="text" class="form-control" name="klassifikation">
 					</div>
 			</div>
 			</div>
 		 </div>
 		 
 		 <!--Row 5 -->
-			<div class="row">			
+		<div class="row">			
 			<div class="col">
 			 	 <div class="form-group row offset-md-6">
 					<label class="col-3">Tilføjelse</label>
 					<div class="col-9">
-					<div class="form-check">
-				  <input class="form-check-input" type="checkbox" id="gridCheck">
-					  <label class="form-check-label" for="gridCheck">
-						Workflow
-					  </label>
+						<div class="form-check">
+					  	<input class="form-check-input" type="checkbox" id="gridCheck" name="workflow">
+						  <label class="form-check-label" for="gridCheck">
+							Workflow
+						  </label>
+						</div>
 					</div>
-					</div>
-			</div>
+				</div>
 			</div>
 		 </div>
 		 
 		 <!--Row 6 - Sagssavne -->
-			<div class="row pt-4">
-				<div class="col">
-			<div class="form-group row">
-				<label class="col-3">Sagsnavn 1</label>
-				<div class="col-9">
-				<input type="text" class="form-control" name="journalplan">
+		<div class="row pt-4">
+			<div class="col">
+				<div class="form-group row">
+					<label class="col-3">Sagsnavn 1</label>
+					<div class="col-9">
+						<input type="text" class="form-control" name="sagsnavn1">
+					</div>
 				</div>
-			</div>
 			</div>
 			
 			<div class="col">
 			 	 <div class="form-group row">
 					<label class="col-3">Sagsnavn 3</label>
 					<div class="col-9">
-					<input type="text" class="form-control" name="journalplan">
+					<input type="text" class="form-control" name="sagsnavn3">
 					</div>
 			</div>
 			</div>
 		 </div>
 		 
 		 <!--Row 7 - Sagssavne -->
-			<div class="row">
-				<div class="col">
-			<div class="form-group row">
-				<label class="col-3">Sagsnavn 2</label>
-				<div class="col-9">
-				<input type="text" class="form-control" name="journalplan">
+		<div class="row">
+			<div class="col">
+				<div class="form-group row">
+					<label class="col-3">Sagsnavn 2</label>
+					<div class="col-9">
+						<input type="text" class="form-control" name="sagsnavn2">
+					</div>
 				</div>
-			</div>
 			</div>
 			
 			<div class="col">
-			 	 <div class="form-group row">
+				<div class="form-group row">
 					<label class="col-3">Sagsnavn 4</label>
 					<div class="col-9">
-					<input type="text" class="form-control" name="journalplan">
+						<input type="text" class="form-control" name="sagsnavn4">
 					</div>
-			</div>
+				</div>
 			</div>
 		 </div>
 		 
 		 <!--Row 8 generel info -->
-			<div class="row pt-5">
-				<div class="col">
-			<div class="form-group row">
-				<label class="col-3">Medarbejder</label>
-				<div class="col-9">
-				<input type="text" class="form-control" name="journalplan">
+		<div class="row pt-5">
+			<div class="col">
+				<div class="form-group row">
+					<label class="col-3">Medarbejder</label>
+					<div class="col-9">
+						<input type="text" class="form-control" name="medarbejder">
+					</div>
 				</div>
-			</div>
 			</div>
 			
 			<div class="col">
-			 	 <div class="form-group row">
+				<div class="form-group row">
 					<label class="col-3">Sagsafdeling</label>
 					<div class="col-9">
-					<input type="text" class="form-control" name="journalplan">
+						<input type="text" class="form-control" name="sagsafdeling">
 					</div>
-			</div>
+				</div>
 			</div>
 		 </div>
 		 
 		 <!--Row 9 generel info -->
-			<div class="row">
-				<div class="col">
-			<div class="form-group row">
-				<label class="col-3">Afdeling</label>
-				<div class="col-9">
-				<input type="text" class="form-control" name="journalplan">
+		<div class="row">
+			<div class="col">
+				<div class="form-group row">
+					<label class="col-3">Afdeling</label>
+					<div class="col-9">
+						<input type="text" class="form-control" name="afdeling">
+					</div>
 				</div>
-			</div>
 			</div>
 			
 			<div class="col">
-			 	 <div class="form-group row">
+				<div class="form-group row">
 					<label class="col-3">Status</label>
 					<div class="col-9">
-					<input type="text" class="form-control" name="journalplan">
+						<input type="text" class="form-control" name="status">
 					</div>
-			</div>
+				</div>
 			</div>
 		 </div>
 		 
 		 <!--Row 10 generel info -->
-			<div class="row">
+		<div class="row">
 				<div class="col">
-			<div class="form-group row">
-				<label class="col-3">Sagsansvarlig</label>
-				<div class="col-9">
-				<input type="text" class="form-control" name="journalplan">
+				<div class="form-group row">
+					<label class="col-3">Sagsansvarlig</label>
+					<div class="col-9">
+						<input type="text" class="form-control" name="sagsansvarlig">
+					</div>
 				</div>
-			</div>
 			</div>
 			
 			<div class="col">
 			 	 <div class="form-group row">
 					<label class="col-3">Adresse</label>
 					<div class="col-9">
-					<input type="text" class="form-control" name="journalplan">
+						<input type="text" class="form-control" name="adresse">
 					</div>
+				</div>
 			</div>
-			</div>
-		 </div>
+		</div>
+			
 			<div class="form-group row pt-3">
 				<div class="offset-md-10">
 			  		<button class="btn btn-secondary">Ryd</button>
 			  		<button type="submit" class="btn btn-primary">Opret sag</button>
 				</div>
-		  </div>
-		   
-		 
+		 	</div>
 		</form>
 	</div>
-	
-		</div>
+</div>
 		
 		
-		<!---JS for datepicker-->
-			<script>
-			$('#datepicker').datepicker({
-			uiLibrary: 'bootstrap4'
-			});
-			</script>
+<!---JS for datepicker-->
+<script>
+$('#datepicker').datepicker({
+uiLibrary: 'bootstrap4'
+});
+</script>
 </body>
 </html>

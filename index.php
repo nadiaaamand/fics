@@ -64,12 +64,9 @@
 		<p class="float-left m-0">Mine opgaver</p>
 		<img class="float-right vindue" src="img/vindue.png" alt="vindue">
 	</div>
-	<div class="div-box">			
+	<div class="div-box opgave">			
 	<?php		
-		$conn = mysqli_connect('localhost', 'root', 'root', 'poc-fics');
-		if (!$conn) {
-			die('Connection failed: '. mysqli_connect_error());
-			}
+		require_once 'db-conn.php'; 
 
 		$sql = "SELECT * FROM EGNE_OPGAVER";
 		$result = $conn->query($sql);
@@ -104,8 +101,6 @@
 			} else {
 			echo "0 results";
 		}
-
-		$conn->close();
 	?>
 	</div>
 	
@@ -116,10 +111,7 @@
 	</div>
 	<div class="div-box">
 		<?php		
-		$conn = mysqli_connect('localhost', 'root', 'root', 'poc-fics');
-		if (!$conn) {
-			die('Connection failed: '. mysqli_connect_error());
-			}
+		require_once 'db-conn.php'; 
 
 		$sql = "SELECT * FROM SAGER";
 		$result = $conn->query($sql);
@@ -148,8 +140,6 @@
 			} else {
 			echo "0 results";
 		}
-
-		$conn->close();
 	?>
 	</div>
 	
