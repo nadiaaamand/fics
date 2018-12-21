@@ -6,7 +6,7 @@
 
 <!--Main SCSS-->
 <link rel="stylesheet" href="scss/main.css">
-
+ 
 <!--Bootstrap JS-->
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <meta charset="UTF-8">
@@ -58,13 +58,56 @@
 	  <a class="nav-link box" href="#">Dokumenter</a>
 	  <a class="nav-link box" href="#">Kontakter</a>
 	</nav>
-
+	
 <!--Mine opgaver-->	
 	<div class="clearfix pl-3 pr-3 pt-1 pb-1 border-bottom">
 		<p class="float-left m-0">Mine opgaver</p>
 		<img class="float-right vindue" src="img/vindue.png" alt="vindue">
 	</div>
-	<div class="div-box"></div>
+	<div class="div-box">			
+		<?php		
+			$conn = mysqli_connect('localhost', 'root', 'root', 'poc-fics');
+			if (!$conn) {
+				die('Connection failed: '. mysqli_connect_error());
+				}
+
+			$sql = "SELECT * FROM EGNE_OPGAVER";
+			$result = $conn->query($sql);
+
+			if ($result->num_rows > 0) {
+				echo "<table>
+				<tr>
+				<th>*</th>
+				<th>Godkendt</th>
+				<th>Type</th>
+				<th>Medarbejder</th>
+				<th>Aktivitetsdato</th>
+				<th>Forventet retur</th>
+				<th>Emne</th>
+				<th>Beskrivelse</th>
+				</tr>";
+				// output data of each row
+				while($row = $result->fetch_assoc()) {
+					echo "<tr>" . 
+						"<td>" . $row["ID"]. "</td>" .
+						"<td><input type ='checkbox'>" ."</td>" .
+						"<td>" . $row["TYPE"]. "</td>" .
+						"<td>" . $row["MEDARBEJDER"]. " </td>" .
+						"<td>" . $row["AKVTIVITETSDATO"]. "</td>".
+						"<td>" . $row["FORVENTET_RETUR"]. "</td>".
+						"<td>" . $row["EMNE"]. "</td>".
+						"<td>" . $row["BESKRIVELSE"]. "</td>".
+						"</tr>";
+				}
+				echo "</table>";
+				
+				} else {
+				echo "0 results";
+			}
+
+			$conn->close();
+		?>
+	</div>
 	
 <!--Sager-->	
 	<div class="clearfix pl-3 pr-3 pt-1 pb-1 border-bottom border-top">

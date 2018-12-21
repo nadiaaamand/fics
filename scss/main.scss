@@ -151,3 +151,22 @@ a.nav-link.sidemenu {
     background-color: #e5e5e5;
     border-color: #e5e5e5;
 }
+
+/*-----------------------Table style---------------------*/
+th {
+    padding-right: 10px;
+}
+
+tr, th, td {
+    border: 1px solid $active;
+	padding-left: 10px;
+	font-size: 14px;
+}
+
+table {
+    width: 100.2%;
+}
+
+input[type=checkbox] {
+    margin-left: 30px;
+}
