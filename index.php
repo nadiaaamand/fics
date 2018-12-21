@@ -65,48 +65,48 @@
 		<img class="float-right vindue" src="img/vindue.png" alt="vindue">
 	</div>
 	<div class="div-box">			
-		<?php		
-			$conn = mysqli_connect('localhost', 'root', 'root', 'poc-fics');
-			if (!$conn) {
-				die('Connection failed: '. mysqli_connect_error());
-				}
-
-			$sql = "SELECT * FROM EGNE_OPGAVER";
-			$result = $conn->query($sql);
-
-			if ($result->num_rows > 0) {
-				echo "<table>
-				<tr>
-				<th>*</th>
-				<th>Godkendt</th>
-				<th>Type</th>
-				<th>Medarbejder</th>
-				<th>Aktivitetsdato</th>
-				<th>Forventet retur</th>
-				<th>Emne</th>
-				<th>Beskrivelse</th>
-				</tr>";
-				// output data of each row
-				while($row = $result->fetch_assoc()) {
-					echo "<tr>" . 
-						"<td>" . $row["ID"]. "</td>" .
-						"<td><input type ='checkbox'>" ."</td>" .
-						"<td>" . $row["TYPE"]. "</td>" .
-						"<td>" . $row["MEDARBEJDER"]. " </td>" .
-						"<td>" . $row["AKVTIVITETSDATO"]. "</td>".
-						"<td>" . $row["FORVENTET_RETUR"]. "</td>".
-						"<td>" . $row["EMNE"]. "</td>".
-						"<td>" . $row["BESKRIVELSE"]. "</td>".
-						"</tr>";
-				}
-				echo "</table>";
-				
-				} else {
-				echo "0 results";
+	<?php		
+		$conn = mysqli_connect('localhost', 'root', 'root', 'poc-fics');
+		if (!$conn) {
+			die('Connection failed: '. mysqli_connect_error());
 			}
 
-			$conn->close();
-		?>
+		$sql = "SELECT * FROM EGNE_OPGAVER";
+		$result = $conn->query($sql);
+
+		if ($result->num_rows > 0) {
+			echo "<table>
+			<tr>
+			<th>*</th>
+			<th>Godkendt</th>
+			<th>Type</th>
+			<th>Medarbejder</th>
+			<th>Aktivitetsdato</th>
+			<th>Forventet retur</th>
+			<th>Emne</th>
+			<th>Beskrivelse</th>
+			</tr>";
+			// output data of each row
+			while($row = $result->fetch_assoc()) {
+				echo "<tr>" . 
+					"<td>" . $row["ID"]. "</td>" .
+					"<td><input type ='checkbox'>" ."</td>" .
+					"<td>" . $row["TYPE"]. "</td>" .
+					"<td>" . $row["MEDARBEJDER"]. " </td>" .
+					"<td>" . $row["AKVTIVITETSDATO"]. "</td>".
+					"<td>" . $row["FORVENTET_RETUR"]. "</td>".
+					"<td>" . $row["EMNE"]. "</td>".
+					"<td>" . $row["BESKRIVELSE"]. "</td>".
+					"</tr>";
+			}
+			echo "</table>";
+
+			} else {
+			echo "0 results";
+		}
+
+		$conn->close();
+	?>
 	</div>
 	
 <!--Sager-->	
@@ -114,7 +114,44 @@
 		<p class="float-left m-0">Sager</p>
 		<img class="float-right vindue" src="img/vindue.png" alt="vindue">
 	</div>
-	<div class="div-box"></div>
+	<div class="div-box">
+		<?php		
+		$conn = mysqli_connect('localhost', 'root', 'root', 'poc-fics');
+		if (!$conn) {
+			die('Connection failed: '. mysqli_connect_error());
+			}
+
+		$sql = "SELECT * FROM SAGER";
+		$result = $conn->query($sql);
+
+		if ($result->num_rows > 0) {
+			echo "<table>
+			<tr>
+			<th>*</th>
+			<th>Afslut dato</th>
+			<th>Medarbejder</th>
+			<th>Opr. dato</th>
+			<th>Sagsnavn 1</th>
+			</tr>";
+			// output data of each row
+			while($row = $result->fetch_assoc()) {
+				echo "<tr>" . 
+					"<td>" . $row["ID"]. "</td>" .
+					"<td>" . $row["AFSLUTDATO"]. "</td>" .
+					"<td>" . $row["MEDARBEJDER"]. " </td>" .
+					"<td>" . $row["OPRETDATO"]. "</td>".
+					"<td>" . $row["SAGSNAVN1"]. "</td>".
+					"</tr>";
+			}
+			echo "</table>";
+
+			} else {
+			echo "0 results";
+		}
+
+		$conn->close();
+	?>
+	</div>
 	
 <!--Dokumenter-->	
 		<div class="border-bottom border-top">
