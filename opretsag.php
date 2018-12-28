@@ -27,6 +27,7 @@
 <div class="container col-10 p-0 border">
 <!--Main Navigation-->
 	<nav class="nav border-bottom">
+   <a class="nav-link" href="index.php"><img class="refresh img-fluid" alt="fics logo" src="img/FICS-logo.png"></a>
 	  <a class="nav-link" href="opretsag.php">Værktøjslinje</a>
 	  <a class="nav-link" href="soeg.php">Skabeloner</a>
 	  <a class="nav-link" href="#">Hjælp</a>
