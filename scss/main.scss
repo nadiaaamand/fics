@@ -2,9 +2,11 @@
 
 /*Color variables*/
 $link_color: #333;
-$box_background: #c5c5c5;
-$active: #707070;
-$hover_menu: #dee2e6;
+$box_background: #e5e5e5;
+$hover_btn: #002E8A;
+$active: #002060;
+$hover_menu: #c7cbcf;
+$ryd: #CB151D;
 
 body{ /*small reset*/
 	padding: 0;
@@ -55,6 +57,8 @@ a:hover{
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
     color: #fff;
     background-color: $active;
+	border-left: 1px solid $active;
+	border-right: 1px solid $active;
 }
 
 .portal{
@@ -102,7 +106,7 @@ a:hover{
 
 a.nav-link.minus {
     padding: 0.3rem 1rem;
-	background-color: $box-background;
+	background-color: $box_background;
 	border-left: 1px solid $hover_menu;
 	border-right: 1px solid $hover_menu;
 }
@@ -137,19 +141,19 @@ a.nav-link.sidemenu {
 
 .btn-primary:hover {
     color: #fff;
-    background-color: #c5c5c5;
-    border-color: #c5c5c5;
+    background-color: $hover_btn;
+    border-color: $hover_btn;
 }
 
 .btn-secondary {
     color: #fff;
-    background-color: $box-background;
-    border-color: $box-background;
+    background-color: $ryd;
+    border-color: $ryd;
 }
 .btn-secondary:hover {
     color: #fff;
-    background-color: #e5e5e5;
-    border-color: #e5e5e5;
+    background-color: $ryd;
+    border-color: $ryd;
 }
 
 /*-----------------------Table style---------------------*/

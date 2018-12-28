@@ -17,15 +17,15 @@ a:hover {
   color: #000; }
 
 .box {
-  background-color: #c5c5c5;
+  background-color: #e5e5e5;
   padding: 0.5em 1.5em;
-  border-left: 1px solid #dee2e6;
-  border-right: 1px solid #dee2e6; }
+  border-left: 1px solid #c7cbcf;
+  border-right: 1px solid #c7cbcf; }
 
 .soeg {
-  background-color: #c5c5c5;
-  border-left: 1px solid #dee2e6;
-  border-right: 1px solid #dee2e6; }
+  background-color: #e5e5e5;
+  border-left: 1px solid #c7cbcf;
+  border-right: 1px solid #c7cbcf; }
 
 .addtab {
   width: auto;
@@ -35,12 +35,14 @@ a:hover {
   border-radius: 0; }
 
 .nav-pills .nav-link:hover {
-  background-color: #707070;
+  background-color: #002060;
   color: #fff; }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #707070; }
+  background-color: #002060;
+  border-left: 1px solid #002060;
+  border-right: 1px solid #002060; }
 
 .portal {
   display: block;
@@ -50,9 +52,9 @@ a:hover {
 .opgaver {
   display: block;
   padding: .5rem 1rem;
-  border-bottom: 1px solid #c5c5c5;
+  border-bottom: 1px solid #e5e5e5;
   margin: 0 0 1em 0;
-  background-color: #c5c5c5; }
+  background-color: #e5e5e5; }
 
 .sletfane {
   width: auto;
@@ -77,9 +79,9 @@ a:hover {
 
 a.nav-link.minus {
   padding: 0.3rem 1rem;
-  background-color: #c5c5c5;
-  border-left: 1px solid #dee2e6;
-  border-right: 1px solid #dee2e6; }
+  background-color: #e5e5e5;
+  border-left: 1px solid #c7cbcf;
+  border-right: 1px solid #c7cbcf; }
 
 a.nav-link.sidemenu {
   padding: 0.3rem 1rem; }
@@ -99,30 +101,30 @@ a.nav-link.sidemenu {
 
 .btn-primary {
   color: #fff;
-  background-color: #707070;
-  border-color: #707070; }
+  background-color: #002060;
+  border-color: #002060; }
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #c5c5c5;
-  border-color: #c5c5c5; }
+  background-color: #002E8A;
+  border-color: #002E8A; }
 
 .btn-secondary {
   color: #fff;
-  background-color: #c5c5c5;
-  border-color: #c5c5c5; }
+  background-color: #CB151D;
+  border-color: #CB151D; }
 
 .btn-secondary:hover {
   color: #fff;
-  background-color: #e5e5e5;
-  border-color: #e5e5e5; }
+  background-color: #CB151D;
+  border-color: #CB151D; }
 
 /*-----------------------Table style---------------------*/
 th {
   padding-right: 10px; }
 
 tr, th, td {
-  border: 1px solid #c5c5c5;
+  border: 1px solid #e5e5e5;
   padding-left: 10px;
   font-size: 14px; }
 
@@ -134,3 +136,5 @@ table {
 
 table > *:first-child:not(thead) td:first-child {
   width: 25px; }
+
+/*# sourceMappingURL=main.css.map */
