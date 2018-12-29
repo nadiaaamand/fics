@@ -1,5 +1,3 @@
-CREATE DATABASE  IF NOT EXISTS `poc-fics` /*!40100 DEFAULT CHARACTER SET utf8 */;
-USE `poc-fics`;
 -- MySQL dump 10.13  Distrib 5.7.17, for macos10.12 (x86_64)
 --
 -- Host: localhost    Database: poc-fics
@@ -29,8 +27,8 @@ CREATE TABLE `EGNE_OPGAVER` (
   `GODKENDT` bit(1) DEFAULT NULL,
   `TYPE` varchar(45) DEFAULT NULL,
   `MEDARBEJDER` varchar(45) NOT NULL,
-  `AKVTIVITETSDATO` datetime DEFAULT NULL,
-  `FORVENTET_RETUR` datetime DEFAULT NULL,
+  `AKVTIVITETSDATO` date DEFAULT NULL,
+  `FORVENTET_RETUR` date DEFAULT NULL,
   `EMNE` varchar(100) NOT NULL,
   `BESKRIVELSE` varchar(1000) DEFAULT NULL,
   PRIMARY KEY (`ID`)
@@ -43,7 +41,7 @@ CREATE TABLE `EGNE_OPGAVER` (
 
 LOCK TABLES `EGNE_OPGAVER` WRITE;
 /*!40000 ALTER TABLE `EGNE_OPGAVER` DISABLE KEYS */;
-INSERT INTO `EGNE_OPGAVER` VALUES (1,'','Brev','NEA','2018-02-05 00:00:00',NULL,'Omjournalisering',NULL),(2,'','Brev','SLBP','2018-06-11 00:00:00','2019-02-03 00:00:00','Sagsbehandling',NULL);
+INSERT INTO `EGNE_OPGAVER` VALUES (1,'','Brev','NEA','2018-02-05',NULL,'Omjournalisering',NULL),(2,'','Brev','SLBP','2018-06-11','2019-02-03','Sagsbehandling',NULL);
 /*!40000 ALTER TABLE `EGNE_OPGAVER` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -56,13 +54,13 @@ DROP TABLE IF EXISTS `SAGER`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `SAGER` (
   `ID` int(11) NOT NULL AUTO_INCREMENT,
-  `OPRETDATO` datetime NOT NULL,
-  `AFSLUTDATO` datetime DEFAULT NULL,
+  `OPRETDATO` date NOT NULL,
+  `AFSLUTDATO` date DEFAULT NULL,
   `MEDARBEJDER` varchar(45) NOT NULL,
-  `SAGSNAVN 1` varchar(100) DEFAULT NULL,
-  `SAGSNAVN 2` varchar(100) DEFAULT NULL,
-  `SAGSNAVN 3` varchar(100) DEFAULT NULL,
-  `SAGSNAVN 4` varchar(100) DEFAULT NULL,
+  `SAGSNAVN1` varchar(100) DEFAULT NULL,
+  `SAGSNAVN2` varchar(100) DEFAULT NULL,
+  `SAGSNAVN3` varchar(100) DEFAULT NULL,
+  `SAGSNAVN4` varchar(100) DEFAULT NULL,
   `JOURNALPLAN` varchar(255) DEFAULT NULL,
   `SAGSAFDELING` varchar(150) DEFAULT NULL,
   `SAGSGRUPPE` varchar(100) DEFAULT NULL,
@@ -73,11 +71,11 @@ CREATE TABLE `SAGER` (
   `KLASSIFIKATION` varchar(45) DEFAULT NULL,
   `WORKFLOW` bit(1) NOT NULL,
   `AFDELING` varchar(45) DEFAULT NULL,
-  `STATUS` varchar(45) NOT NULL,
+  `STATUS` varchar(45) DEFAULT NULL,
   `SAGSANSVARLIG` varchar(100) NOT NULL,
   `ADRESSE` varchar(150) DEFAULT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -86,7 +84,7 @@ CREATE TABLE `SAGER` (
 
 LOCK TABLES `SAGER` WRITE;
 /*!40000 ALTER TABLE `SAGER` DISABLE KEYS */;
-INSERT INTO `SAGER` VALUES (1,'2018-12-12 00:00:00','2019-02-02 00:00:00','Nadia Elida Aamand','Sagsbehandling','København H',NULL,NULL,NULL,'FICS',NULL,NULL,'\0','Behandling',1,NULL,'\0',NULL,'','Nadia Elida Aamand',NULL),(2,'2018-12-20 00:00:00',NULL,'Simone Petersen','Testsag','Glostrup',NULL,NULL,NULL,'Consit',NULL,NULL,'','Test',2,'Ikke klassificeret','\0',NULL,'','Nadia Elida Aamand',NULL);
+INSERT INTO `SAGER` VALUES (1,'2018-12-12','2019-02-02','Nadia Elida Aamand','Sagsbehandling','København H',NULL,NULL,NULL,'FICS',NULL,NULL,'\0','Behandling',1,NULL,'\0',NULL,'','Nadia Elida Aamand',NULL),(2,'2018-12-20',NULL,'Simone Petersen','Testsag','Glostrup',NULL,NULL,NULL,'Consit',NULL,NULL,'','Test',2,'Ikke klassificeret','\0',NULL,'','Nadia Elida Aamand',NULL);
 /*!40000 ALTER TABLE `SAGER` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -99,4 +97,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-12-20 12:56:13
+-- Dump completed on 2018-12-29 11:02:41
