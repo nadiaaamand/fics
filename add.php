@@ -1,5 +1,5 @@
 <?php
-require_once 'db-conn.php'; 
+include 'db-conn.php'; 
 
 $journalplan = $_POST['journalplan'];
 $sagstype = $_POST['sagstype'];
@@ -18,10 +18,23 @@ $afdeling = $_POST['afdeling'];
 $status = $_POST['status'];
 $sagsansvarlig = $_POST['sagsansvarlig'];
 $adresse = $_POST['adresse'];
+echo "Her0";
 
+$sql = "INSERT INTO SAGER (OPRETDATO, MEDARBEJDER, SAGSNAVN1, SAGSNAVN2, SAGSNAVN3, SAGSNAVN4, JOURNALPLAN, SAGSAFDELING, SAGSGRUPPE, UNDERNR, SAGSTYPE, SAGSID, KLASSIFIKATION, AFDELING, STATUS, SAGSANSVARLIG, ADRESSE)  VALUES (STR_TO_DATE('$opretdato', '%m/%d/%Y'), '$medarbejder', '$sagsnavn1', '$sagsnavn2', '$sagsnavn3', '$sagsnavn4', '$journalplan', '$sagsafdeling', '$sagsgruppe', '$undernr', '$sagstype', '$sagsid', '$klassifikation', '$afdeling', '$status', '$sagsansvarlig', '$adresse')";
 
-$sql = "INSERT INTO SAGER (JOURNALPLAN, SAGSTYPE, SAGSID, SAGSGRUPPE, UNDERNR, KLASSIFIKATION, SAGSNAVN1, SAGSNAVN2, SAGSNAVN3, SAGSNAVN4, MEDARBEJDER, SAGSAFDELING, AFDELING, STATUS, SAGSANSVARLIG, ADRESSE) VALUES ('$journalplan', '$sagstype', '$sagsid', '$sagsgruppe', '$undernr', '$klassifikation', '$sagsnavn1', '$sagsnavn2', '$sagsnavn3', '$sagsnavn4', '$medarbejder', '$sagsafdeling', '$afdeling', '$status', '$sagsansvarlig', '$adresse');";
+/*   SAGSAFDELING, SAGSGRUPPE, SAGSID, KLASSIFIKATION, AFDELING, STATUS, SAGSANSVARLIG, ADRESSE, UNDERNR, 
+
+, '$sagsafdeling', '$sagsgruppe', $sagsid', '$klassifikation', '$afdeling', '$status', '$sagsansvarlig', '$adresse'
+
+'$sagsafdeling', '$sagsgruppe', '$undernr', '$sagstype', '$sagsid', '$klassifikation', '$afdeling', '$status', '$sagsansvarlig', '$adresse'
+
+$sql = "INSERT INTO SAGER (JOURNALPLAN, SAGSTYPE, SAGSID, SAGSGRUPPE, UNDERNR, KLASSIFIKATION, SAGSNAVN1, SAGSNAVN2, SAGSNAVN3, SAGSNAVN4, MEDARBEJDER, SAGSAFDELING, AFDELING, STATUS, SAGSANSVARLIG, ADRESSE) VALUES ('$journalplan', '$sagstype', '$sagsid', '$sagsgruppe', '$undernr', '$klassifikation', '$sagsnavn1', '$sagsnavn2', '$sagsnavn3', '$sagsnavn4', '$medarbejder', '$sagsafdeling', '$afdeling', '$status', '$sagsansvarlig', '$adresse')";*/
+echo "Her1";
 
 $result = mysqli_query($conn, $sql);
+
+echo "Your case has now been added";
+echo "<br>";
+echo "<a href='index.php'>Go to your front page</a>";
 	
 ?>

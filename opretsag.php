@@ -78,7 +78,7 @@
 				<div class="form-group row">
 					<label class="col-3">Sagsid</label>
 					<div class="col-9">
-						<input type="text" class="form-control" name="sagsid">
+						<input type="number" class="form-control" name="sagsid">
 					</div>
 				</div>
 			</div>
@@ -111,7 +111,7 @@
 					<div class="form-group row">
 						<label class="col-3">Undernr.</label>
 						<div class="col-9">
-						<input type="text" class="form-control" name="undernr">
+						<input type="number" class="form-control" name="undernr">
 					  		<div class="form-check pt-2">
 							  <input class="form-check-input" type="checkbox" id="gridCheck">
 								  <label class="form-check-label" for="gridCheck">
@@ -268,7 +268,7 @@
 <!---JS for datepicker-->
 <script>
 $('#datepicker').datepicker({
-uiLibrary: 'bootstrap4'
+uiLibrary: 'bootstrap4',
 });
 </script>
 </body>
