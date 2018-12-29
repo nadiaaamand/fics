@@ -156,7 +156,7 @@
 		 </div>
 			<div class="form-group row pt-3 pb-2">
 				<div class="offset-md-9 pl-5">
-					<button class="btn btn-secondary ml-2">Ryd</button>
+					<input class="btn btn-secondary" type="reset" value="Ryd">
 					<button type="submit" class="btn btn-primary pl-5 pr-5 ml-1">Søg</button>
 				</div>
 		  </div>

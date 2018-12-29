@@ -256,7 +256,7 @@
 			
 			<div class="form-group row pt-3">
 				<div class="offset-md-10">
-			  		<button class="btn btn-secondary">Ryd</button>
+					<input class="btn btn-secondary" type="reset" value="Ryd">
 			  		<button type="submit" class="btn btn-primary">Opret sag</button>
 				</div>
 		 	</div>
