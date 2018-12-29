@@ -41,14 +41,6 @@
 		  	<a class="nav-link sidemenu" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Mine favoritter</a>
 		</div>
 
-<!--Content for side menu-->
-	<!--<div class="tab-content" id="v-pills-tabContent">
-		  <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">blblbla</div>
-
-		  <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">lålålå</div>
-
-		  <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">hej</div>
-	</div>	-->
 		</div>
 							
 <!--Secondary Navigation-->	
@@ -155,7 +147,24 @@
 			 <img class="float-vindue vindue mt-1" src="img/vindue.png" alt="vindue">
 			</div>
 	</div>
-	<div class="div-box"></div>
+	<div class="row">
+	<div class="col-2 div-box border-right"></div>
+	<div class="col-10 div-box pl-0">
+		<table>
+			<tr>
+			<th>*</th>
+			<th>Dato</th>
+			<th>Type</th>
+			<th>Titel</th>
+			<th>Medarbejder</th>
+			<th>Navn</th>
+			<th>Postliste</th>
+			<th>Brevtype</th>
+			</tr>
+		</table>
+		<p class="datanone">Ingen data at vise</p>
+	</div>
+	</div>
 	
 <!--Bilag-->	
 		<div class="border-bottom border-top">
@@ -168,10 +177,25 @@
 			 <img class="float-vindue vindue mt-1" src="img/vindue.png" alt="vindue">
 			</div>
 	</div>
-	<div class="div-box"></div>
-	
+
+	<div class="row">
+	<div class="col-2 div-box border-right"></div>
+	<div class="col-10 div-box pl-0">
+	<table>
+			<tr>
+			<th>*</th>
+			<th>Typetekst</th>
+			<th>Notatdato</th>
+			<th>Ativitetsdato</th>
+			<th>Medarbejder</th>
+			<th>Titel</th>
+			<th>Godkendt</th>
+			<th>Brevtype</th>
+			</tr>
+		</table>
+		<p class="datanone">Ingen data at vise</p>
 	</div>	
-		
+		</div>
 	</div>
 	
 	</div>

@@ -137,4 +137,9 @@ table {
 table > *:first-child:not(thead) td:first-child {
   width: 25px; }
 
+.datanone {
+  text-align: center;
+  padding-top: 2.5em;
+  color: #c7cbcf; }
+
 /*# sourceMappingURL=main.css.map */
