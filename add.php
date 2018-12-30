@@ -26,10 +26,5 @@ $result = mysqli_query($conn, $sql);
 header("Location: index.php");
 					
 
-			
-
-/*echo "Your case has now been added";
-echo "<br>";
-echo "<a href='index.php'>Go to your front page</a>";*/
 	
 ?>

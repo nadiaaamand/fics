@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="da">
 <head>
 <!--Bootstrap CSS-->
 <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
@@ -16,7 +16,7 @@
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
 <!--Gijgo JS-->
-<script src="https://unpkg.com/gijgo@1.9.11/js/gijgo.min.js" type="text/javascript"></script>
+<script src="https://unpkg.com/gijgo@1.9.11/js/gijgo.min.js"></script>
 
 <meta charset="UTF-8">
 <title>Opret sag</title>
@@ -139,8 +139,8 @@
 					<label class="col-3">Tilføjelse</label>
 					<div class="col-9">
 						<div class="form-check">
-					  	<input class="form-check-input" type="checkbox" id="gridCheck" name="workflow">
-						  <label class="form-check-label" for="gridCheck">
+					  	<input class="form-check-input" type="checkbox" id="gridCheck1" name="workflow">
+						  <label class="form-check-label" for="gridCheck1">
 							Workflow
 						  </label>
 						</div>

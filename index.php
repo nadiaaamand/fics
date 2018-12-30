@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="da">
 <head>
 <!--Bootstrap CSS-->
 <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
@@ -20,7 +20,7 @@
 	  <a class="nav-link" href="index.php"><img class="refresh img-fluid" alt="fics logo" src="img/FICS-logo.png"></a>
 	  <a class="nav-link" href="opretsag.php">Ny</a>
 	  <a class="nav-link" href="soeg.php">Søg</a>
-	  <a class="nav-link" href="#"><img class="refresh img-fluid" src="img/refresh.png" alt="refresh icon"</a>
+	  <a class="nav-link" href="#"><img class="refresh img-fluid" src="img/refresh.png" alt="refresh icon"></a>
 	  <a class="nav-link" href="#">Moduler</a>
 	  <a class="nav-link" href="#">Funktioner</a>
 	  <a class="nav-link" href="#">Vis</a>
@@ -199,6 +199,6 @@
 	</div>
 	
 	</div>
-
+	</div>
 </body>
 </html>
