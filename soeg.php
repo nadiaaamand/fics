@@ -15,7 +15,7 @@
 </head>
 
 <body>
-<div class="container col-10 p-0 border">
+<div class="container col-10 p-0 border background">
 <!--Main Navigation-->
 	<nav class="nav border-bottom">
    <a class="nav-link" href="index.php"><img class="refresh img-fluid" alt="fics logo" src="img/FICS-logo.png"></a>
