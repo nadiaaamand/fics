@@ -91,6 +91,9 @@ a.nav-link.sidemenu {
   height: 8px;
   padding-left: 5px; }
 
+.background {
+  background-color: #FCFCFC; }
+
 /*-------------------Blandet styling slut---------------*/
 /*-------------------Form style---------------------*/
 .form-control {

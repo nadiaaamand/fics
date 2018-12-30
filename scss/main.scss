@@ -7,6 +7,7 @@ $hover_btn: #002E8A;
 $active: #002060;
 $hover_menu: #c7cbcf;
 $ryd: #CB151D;
+$background: #FCFCFC;
 
 body{ /*small reset*/
 	padding: 0;
@@ -119,6 +120,10 @@ a.nav-link.sidemenu {
     width: auto;
     height: 8px;
     padding-left: 5px;
+}
+
+.background{
+	background-color: $background;
 }
 
 /*-------------------Blandet styling slut---------------*/
