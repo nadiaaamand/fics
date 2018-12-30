@@ -34,11 +34,11 @@
    			<p class="portal">Portalmenu</p>
    			<p class="opgaver">Opgaver</p>
  			
-  			<a class="nav-link sidemenu active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Mine</a>
+  			<a class="nav-link sidemenu active" href="#" role="tab" >Mine</a>
   
-		  	<a class="nav-link sidemenu" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Seneste søgning</a>
+		  	<a class="nav-link sidemenu" href="#" role="tab">Seneste søgning</a>
 		  
-		  	<a class="nav-link sidemenu" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Mine favoritter</a>
+		  	<a class="nav-link sidemenu" href="#" role="tab">Mine favoritter</a>
 		</div>
 
 		</div>
